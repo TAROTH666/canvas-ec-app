@@ -4,7 +4,6 @@
 <main>
 	<div class="container">
 		<div class="mx-auto">
-			<h2>商品情報</h2>
 			<h3>
         @if(isset($product->product_name))
           {{ $product->product_name }}

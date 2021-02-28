@@ -5,9 +5,7 @@
 <main>
 	<div class="container">
 		<div class="mx-auto">
-			<br>
-			<h2 class="text-center">商品検索画面</h2>
-			<br>
+			<h3 class="text-center">商品検索画面</h3>
 			<!--検索フォーム-->
 			<div class="row">
 				<div class="col-sm">
@@ -26,8 +24,7 @@
 						<div class="form-group row">
 							<label class="col-sm-2">商品カテゴリ</label>
 							<div class="col-sm-3">
-								<select id="categoryId" name="categoryId" class="form-control"
-									value="{{ $categoryId }}">
+								<select id="categoryId" name="categoryId" class="form-control" value="{{ $categoryId }}">
 									<option value="">未選択</option>
 
 									@foreach($categories as $id => $category_name)
@@ -48,7 +45,7 @@
 		<div class="productTable">
 			<p>全{{ $products->count() }}件</p>
 			<table class="table table-hover">
-				<thead style="background-color: #ffd900">
+				<thead>
 					<tr>
 						<th style="width:50%">商品名</th>
 						<th>商品カテゴリ</th>
