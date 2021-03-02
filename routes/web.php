@@ -13,6 +13,19 @@
 
 /*
 |-----------------------------------------------------------------
+| ルートディレクトリへのアクセス時
+|-----------------------------------------------------------------
+*/
+
+Route::get('/', function () {
+  return redirect('home');
+});
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+/*
+|-----------------------------------------------------------------
 | ユーザ登録機能
 |-----------------------------------------------------------------
 */
@@ -29,14 +42,6 @@ Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login')->name('login.post');
 Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
-/*
-|-----------------------------------------------------------------
-| ルートディレクトリへのアクセス時
-|-----------------------------------------------------------------
-*/
-Route::get('/', function () {
-  return redirect('/home');
-});
 
 
 // Route::group(['middleware' => ['auth']], function () {
@@ -69,7 +74,7 @@ Route::group(['prefix' => 'seller', 'name' => 'seller.', 'middleware' => ['auth'
 |--------------------------------------------------------------------------
 */
 Route::group(['middleware' => ['auth', 'can:onlyShow']], function () {
-  Route::get('/home', 'HomeController@index')->name('home');
+  // Route::get('/home', 'HomeController@index')->name('home');
   Route::get('/order-history', 'OrderController@showOrderHistory')->name('o_history');
   Route::get('/order-detail/delete', 'OrderController@deleteOrder')->name('delete_order');
   Route::get('/order-detail', 'OrderController@showOrderDetail')->name('o_detail');
