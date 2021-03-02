@@ -24,11 +24,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        \Schema::defaultStringLength(191);
-
         if (\App::environment('production')) {
             \URL::forceScheme('https');
         }
+
+        \Schema::defaultStringLength(191);
 
         // 編集可能ユーザーのみ許可(出品者or管理者)
         \Gate::define('edit', function ($user) {
