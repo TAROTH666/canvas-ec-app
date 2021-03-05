@@ -28,7 +28,7 @@ class CreateMUsers extends Migration
             $table->integer('user_classification_id')->unsigned()->default(2);
             //外部キー制約
             $table->foreign('user_classification_id')->references('id')->on('m_users_classifications')->onDelete('cascade');
-            
+
             $table->string('company_name', 128)->nullable();
             $table->char('delete_flag', 1)->default(0);
             $table->rememberToken();
