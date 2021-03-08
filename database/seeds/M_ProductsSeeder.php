@@ -13,10 +13,10 @@ class M_ProductsSeeder extends Seeder
    {
       DB::table('m_products')->insert([
          'id' => 1,
-         'product_name' => '黒毛和牛サーロイン',
+         'product_name' => 'ラウンドネックTシャツ',
          'category_id' => 1,
-         'price' => 8000,
-         'description' => 'なめらかでとろける食感と、甘くコクがある上品な香りが特徴です',
+         'price' => 1500,
+         'description' => '着心地の良い春夏向けアイテム。',
          'sale_status_id' => 1,
          'product_status_id' => 1,
          'resist_date' => date('Y-m-d H:i:s'),
@@ -25,10 +25,10 @@ class M_ProductsSeeder extends Seeder
       ]);
       DB::table('m_products')->insert([
          'id' => 2,
-         'product_name' => 'A5ランク松坂牛',
+         'product_name' => 'オーバーサイズステンカラーコート',
          'category_id' => 1,
-         'price' => 12000,
-         'description' => '松坂牛は濃厚で上品な甘みが絶品！',
+         'price' => 13000,
+         'description' => 'トレンドのオーバーサイズのコート。',
          'sale_status_id' => 1,
          'product_status_id' => 1,
          'resist_date' => date('Y-m-d H:i:s'),
@@ -37,10 +37,10 @@ class M_ProductsSeeder extends Seeder
       ]);
       DB::table('m_products')->insert([
          'id' => 3,
-         'product_name' => 'フィレステーキ',
+         'product_name' => 'プレミアムコットンシャツ',
          'category_id' => 1,
-         'price' => 5000,
-         'description' => '老若男女問わず選ばれる柔らかさのフィレステーキです',
+         'price' => 3000,
+         'description' => '上質な綿のみを使用したシャツです。',
          'sale_status_id' => 1,
          'product_status_id' => 1,
          'resist_date' => date('Y-m-d H:i:s'),
@@ -49,10 +49,10 @@ class M_ProductsSeeder extends Seeder
       ]);
       DB::table('m_products')->insert([
          'id' => 4,
-         'product_name' => '越前ガニ',
+         'product_name' => 'アクティブストレッチパンツ',
          'category_id' => 2,
          'price' => 6000,
-         'description' => '食べ応え抜群で身がぎっしり！',
+         'description' => '驚くほどのストレッチ性でアウトドアユースに。',
          'sale_status_id' => 1,
          'product_status_id' => 1,
          'resist_date' => date('Y-m-d H:i:s'),
@@ -61,10 +61,10 @@ class M_ProductsSeeder extends Seeder
       ]);
       DB::table('m_products')->insert([
          'id' => 5,
-         'product_name' => '特選いくら',
+         'product_name' => 'テーパードパンツ',
          'category_id' => 2,
          'price' => 4000,
-         'description' => '一粒一粒に旨味が凝縮された贅沢な一品',
+         'description' => '太もも周りはゆったり、しかしシルエットはスマートに。',
          'sale_status_id' => 1,
          'product_status_id' => 1,
          'resist_date' => date('Y-m-d H:i:s'),

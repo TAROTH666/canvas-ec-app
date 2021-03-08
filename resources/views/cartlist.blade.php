@@ -57,7 +57,13 @@
             @foreach($cartData as $cartNumber => $data)
             <tbody>
               <tr class="cart_item">
-                <td class="cart-product-name">{{ $data['product']->product_name }}</td>
+                {{-- <td class="cart-product-name">{{ $data['product']->product_name }}</td> --}}
+
+                <td class="cart-product-name"><a
+                    href=" {{ url('iteminfo',['id' => $data['product']->id ]) }} ">{{ $data['product']->product_name }}</a>
+                </td>
+
+
                 {{-- <td class="col-2 px-0 text-center">{{ $data['product']['category']->category_name }}
                 </td> --}}
                 <td class="cart-product-price">{{ $data['product']->price }}円</td>

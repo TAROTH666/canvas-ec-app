@@ -50,18 +50,13 @@
 						<th style="width:50%">商品名</th>
 						<th>商品カテゴリ</th>
 						<th>価格</th>
-						<th></th>
 					</tr>
 				</thead>
 				@foreach($products as $product)
 				<tr>
-					<td>{{ $product->product_name }}</td>
+					<td><a href=" {{ url('iteminfo',['id' => $product->id ]) }} ">{{ $product->product_name }}</a></td>
 					<td>{{ $product->category->category_name }}</td>
 					<td>{{ $product->price }}円</td>
-					<td>
-						{!! link_to_route('iteminfo', '商品詳細', ['id' => $product->id ], ['class' => 'btn btn-primary
-						btn-sm']) !!}
-					</td>
 				</tr>
 				@endforeach
 			</table>
