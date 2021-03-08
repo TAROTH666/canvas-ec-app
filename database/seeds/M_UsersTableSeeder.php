@@ -22,7 +22,7 @@ class M_UsersTableSeeder extends Seeder
             'apartments' => 'テナントA',
             'email' => 'example1@example.com',
             'phone_number' => '1111111111',
-            // 'user_classification_id' => '1',
+            'user_classification_id' => '1',
             'company_name' => '寿司処　柳',
             'delete_flag' => '0'
         ]);
@@ -37,7 +37,7 @@ class M_UsersTableSeeder extends Seeder
             'apartments' => 'テナントB',
             'email' => 'example2@example.com',
             'phone_number' => '2222222222',
-            // 'user_classification_id' => '2',
+            'user_classification_id' => '2',
             'company_name' => '宮代精肉店',
             'delete_flag' => '0'
         ]);
@@ -53,7 +53,7 @@ class M_UsersTableSeeder extends Seeder
             'apartments' => 'CCビル1F',
             'email' => 'example3@example.com',
             'phone_number' => '3333333333',
-            // 'user_classification_id' => '3',
+            'user_classification_id' => '3',
             'company_name' => 'Cafe de normal',
             'delete_flag' => '0'
         ]);
