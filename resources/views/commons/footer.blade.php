@@ -1,9 +1,9 @@
 <footer id="footer" class="dark">
   <div id="copyrights">
     <div class="container">
-      <div class="row justify-content-between">
+      <div class="row justify-content-center">
         <div class="col-12 col-lg-auto text-center text-lg-left">
-          <p class="mb-3">Copyrights &copy; 2020 All Rights Reserved by Canvas Inc.</p>
+          <p class="mb-3">Copyrights &copy; 2020 All Rights Reserved</p>
         </div>
 
         <!-- <div class="col-12 col-lg-auto text-center text-lg-right">
